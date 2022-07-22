@@ -15,9 +15,9 @@ var postcss = require("gulp-postcss"),
 var paths = {
   styles: {
     // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
-    src: "src/sass/*.sass",
+    src: "interior/sass/*.sass",
     // Compiled files will end up in whichever folder it's found in (partials are not compiled)
-    dest: "src/css/",
+    dest: "interior/css/*.css",
   },
 }
 
