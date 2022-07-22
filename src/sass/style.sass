@@ -1,6 +1,6 @@
-// Import Font style z google fonts 
+/*Import Font style z google fonts */
 
-// Deleting the default format from web browser 
+/* Deleting the default format from web browser */
 *
   padding: 0
   margin: 0
@@ -14,6 +14,9 @@
 
   &:focus, &:active
     outline: none
+
+:root
+  font-size: 62,5%
 
 a:focus, a:active
   outline: none
@@ -63,4 +66,70 @@ h1, h2, h3, h4, h5, h6
   font-size: inherit
   font-weight: inherit
 
-//  Header
+nav
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: space-around
+  width: 100vw
+  height: 100px
+  background-color: transparent
+  padding: 20px 0
+  z-index: 2
+  & .logo
+    display: flex
+    height: 100%
+    & .logo__img
+      margin: auto 0
+      min-height: 60px
+      width: 180px
+      background: url(../img/logo-white.png) 100% / contain no-repeat
+  & .menu
+    display: flex
+    & .menu__container
+      margin: auto 0
+      & ul
+        & li
+          margin: 0 5px
+          float: left
+          & a
+            padding: 10px
+            & span
+              color: white
+              font-size: 1rem
+          &:last-child > a
+            padding: 15px
+            background-color: #8c3b1d
+
+header
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  width: 100vw
+  background: url(../img/home-bg.jpg) center / cover no-repeat
+  & ::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: #472f27
+    opacity: 0.3
+    z-index: -1
+  & .header__container
+    text-align: center
+    z-index: 1
+    color: white
+    & .title
+      font-size: 8rem
+    & .subtitle
+      font-size: 3rem
+    & .description
+      font-size: 1.5rem
+      padding: 15px 0
+
+footer
+  height: 1000px
